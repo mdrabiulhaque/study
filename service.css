@@ -1,0 +1,297 @@
+.logo{
+  width:30% ;  
+  height: 70px;
+ 
+}
+.logo img{
+  width:100% ;  
+  height: 70px;
+   
+}
+.menu{
+width:100% ;  
+height: 80px;
+display: flex;
+align-items: center;
+float: left; 
+}
+.logo{
+  width:10% ;  
+  height: 60px;
+  margin-right: 40px;
+}
+.logo img{
+  width:100% ;  
+  height: 60px; 
+}
+.menu ul{ 
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu ul li{ 
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 7px;
+  border-radius: 10px;
+  font-size:22px ;
+  background-color:bisque;
+}
+.menu ul li a{ 
+  color: black;
+text-decoration: none;
+}
+.menu ul li:hover{ 
+background-color:red;
+
+}
+.menu ul li a:hover{ 
+  color:yellow;
+}
+
+/*home start*/
+.slide-a{
+ float: left;
+  width: 100%;
+  height: 420px;
+  margin: 2px;
+}
+.mySlides {
+  width:100%;
+  height:385px;
+  }
+    
+.mySlides img {
+  width:100%;
+  height:335px;
+}
+.mySlides{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: red;
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 4px 4px 2px silver;
+  animation: mymove 2s infinite;
+}
+@keyframes mymove {
+  50% {text-shadow: 10px 20px 30px blue;}
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  color: red;
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 20px;
+  margin-top: -90px;
+  color: red;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.10s ease;
+  border-radius: 0 6px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 30px 0 0 30px;
+}
+.prev {
+  left: 0;
+  border-radius:0 30px 30px  0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(80,100,90,30.40);
+ 
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext{
+  height:15px;
+  color:red;
+  font-size: 20px;
+  font-weight:bold;
+  text-align:center;
+  text-shadow: 4px 4px 2px silver;
+}
+
+/* Caption text */
+.text{
+  height:15px;
+  color:red;
+  font-size: 20px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 4px 4px 2px silver;
+}
+
+/* The dots/bullets/indicators */
+
+.dott{
+  width: 100%;
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 20px;
+  margin: 7px;
+  background-color: #bbb;
+  border-radius: 40%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  text-shadow: 4px 4px 2px silver;
+}
+
+.active, .dot:hover {
+  background-color:red;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* deacription start*/
+
+.description{
+  width: 100%;  
+  border-width: 1px;
+
+}
+.card-area{
+width: 100%;  
+display: grid;
+background-color: #2196F3;
+padding: px;
+grid-template-columns:repeat(3,1fr);
+
+
+}
+
+.card{
+position: relative;
+  background-color:red ;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  margin: 15px;
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+  height: 200px;
+  border-radius:10px ;
+  
+}
+.card img{
+  display: block;
+width: 100%;
+height: auto;
+  height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.card:hover .overlay {
+  height: 100%;
+}
+.textt {
+  color: white;
+  font-size: 20px; 
+}
+
+.ownership{
+  width:100% ;
+  height:60px ;
+  font-size:20px ;
+display: flex;
+justify-content: center;
+align-items: center;
+}

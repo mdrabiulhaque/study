@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Hero Memorial School</title>
+    <link rel="stylesheet" href="about.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <section class="one">
+
+        <nav class="menu">
+            <div class="logo">
+                <img src="img/5.jpg" alt="">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="service.html">Service</a></li>
+
+
+            </ul>
+        </nav>
+    </section>
+
+    <section class="two">
+        <div class="slide-a">
+
+            <div class="mySlides fade">
+
+                <img class="mySlides-top" src="img/1.jpg">
+                <div class="top-left">Program Hero Mamorial School</div>
+                <div class="top-right">An Unique School</div>
+                <div class="bottom-left">Come for learn</div>
+                <div class="bottom-right">Build a best world</div>
+                <div class="centered">Since-1971 A.D;</div>
+                <div class="numbertext">1 / 4</div>
+                <div class="text">Caption One</div>
+
+            </div>
+
+            <div class="mySlides fade">
+                <img class="mySlides-bottom" src="img/2.jpg">
+                <div class="top-left">Program Hero Mamorial School</div>
+                <div class="top-right">An Unique School</div>
+                <div class="bottom-left">Come for learn</div>
+                <div class="bottom-right">Build a best world</div>
+                <div class="centered">Since-1971 A.D;</div>
+                <div class="numbertext">2 / 4</div>
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img class="mySlides-left" src="img/3.jpg">
+                <div class="top-left">Program Hero Mamorial School</div>
+                <div class="top-right">An Unique School</div>
+                <div class="bottom-left">Come for learn</div>
+                <div class="bottom-right">Build a best world</div>
+                <div class="centered">Since-1971 A.D;</div>
+                <div class="numbertext">3 / 4</div>
+                <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fade">
+                <img class="mySlides-right" src="img/4.jpg">
+
+                <div class="top-left">Program Hero Mamorial School</div>
+                <div class="top-right">An Unique School</div>
+                <div class="bottom-left">Come for learn</div>
+                <div class="bottom-right">Build a best world</div>
+                <div class="centered">Since-1971 A.D;</div>
+                <div class="numbertext">4 / 4</div>
+                <div class="text">Caption Four</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+            <div class="dott">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+
+
+
+
+        </script>
+        </div>
+    </section>
+
+
+
+
+    <section class="description">
+        <div class="card-area">
+            <div class="card">
+                <img src="img/7.jpg" alt="">
+                <div class="overlay">
+                    <div class="textt">
+                        <h3>PROJECT-BASED LEARNING</h3>
+                        <p>We firmly believe students learn better with Project-Based Learning. They come to understand
+                            content more deeply and holistically, allowing them to better apply the things they learn
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/2.jpg" alt="">
+                <div class="overlay">
+                    <div class="textt">
+                        <h3>INTERNATIONALLY RENOWNED CURRICULUM</h3>
+                        <p>WaPrep is 1 of 4 private schools in Washington State to offer the IB DP program. Our
+                            curriculum is internationally recognized schools internationally recognized schools.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="img/3.jpg" alt="">
+                <div class="overlay">
+                    <div class="textt">
+                        <h3>ENTREPRENEURIAL THINKING & STEM (STEEM)</h3>
+                        <p>Entrepreneurship to us is broader than business ventures; it is an expanded way of
+                            thinking and
+                            imagining ways of solving problems.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/4.jpg" alt="">
+                <div class="overlay">
+                    <div class="textt">
+                        <h3> ENGLISH (CORE)</h3>
+                        <p>
+                            General English Programs are for all students from beginner to advanced levels, and
+                            these are
+                            the best way to start studying in Canada. Improve core</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/6.jpg" alt="">
+                <div class="overlay">
+                    <div class="textt">
+                        <h3>FOCUS ON WRITING</h3>
+                        <p>
+                            This intensive program consists of three classes daily. The first class focuses on
+                            understanding
+                            and effectively using vocabulary (including collocations</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/8.jpg" alt="">
+                <div class="overlay">
+                    <div class="textt">
+                        <h3>FOCUS ON SPEAKING</h3>
+                        <p>
+                            This course is designed to transform students into confident and expressive English
+                            speakers. It is ideal for students who possess a solid</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+    </section>
+
+</body>
+
+<footer class="ownership"> Copyrights © 2015 All Rights Reserved by English School of Canada
+    Terms of Use / Privacy Policy</footer>
+</div>
+
+</html>
